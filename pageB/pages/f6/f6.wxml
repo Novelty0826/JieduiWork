@@ -1,0 +1,13 @@
+<!--pageB/pages/f6/f6.wxml-->
+
+<view class="content">
+    <image src='../../../pageB/images/微信图片_20231003184707.png'></image>
+</view>
+
+<view class="b1">
+    <text>排行榜</text>
+</view>
+
+<view class="content1">
+    <image src='../../../pageB/images/微信图片_20231003022722.png'></image>
+</view>

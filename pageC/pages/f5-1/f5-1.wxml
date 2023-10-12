@@ -1,0 +1,31 @@
+<!--pageC/pages/f5-1/f5-1.wxml-->
+
+<view class="page-body-1">
+  <view class="page-section-1">
+     <view class="w1">输入游戏局数（1-5）</view>
+     <view class="w2">
+       <view class="w3">
+         <input class="w4" bindinput="bindInput1" type="number" placeholder="输入框"></input>
+       </view>
+     </view>
+  </view>
+</view> 
+
+<view class="page-body-2">
+  <view class="page-section-2">
+     <view class="x1">输入游戏筹码</view>
+     <view class="x2">
+       <view class="x3">
+         <input class="x4" bindinput="bindInput2" type="number" placeholder="输入框"></input>
+       </view>
+     </view>
+  </view>
+</view> 
+
+<view class="t1" bindtap="goto1">确定</view>
+
+
+
+<view class="content">
+    <image src='../../../pageC/images/微信图片_20231003022722.png'></image>
+</view>

@@ -1,0 +1,53 @@
+<!--pages/f1/f1.wxml-->
+
+<view class="m1">
+    <view class='title'>
+    <text1>ALL</text1>
+    <text2>OR</text2>
+    <text3>NOTH</text3>
+    <text4>IN</text4>
+    <text5>G</text5>
+    </view>
+</view>
+
+<!-- <view class="user">
+   <view class="img">
+   <open-data class='logo' type='userAvatarUrl'></open-data>
+   <open-data type='userNickName'></open-data>
+   </view>
+</view> -->
+
+<view class="p2">
+    <navigator url='../f2/f2'>
+    <image src='../../images/微信图片_20231005025004.png'></image>
+    </navigator>
+</view>
+
+
+<navigator url='../../pageA/pages/f3-1/f3-1'>
+<view class="box1">
+    <text>本地对战</text>
+</view>
+</navigator>
+
+<navigator url='../../pageA/pages/f4-1/f4-1'>
+<view class="box2">
+    <text>在线对战</text>
+</view>
+</navigator>
+
+<navigator url='../../pageC/pages/f5-1/f5-1'>
+<view class="box3">
+    <text>人机对战</text>
+</view>
+</navigator>
+
+<navigator url='../../pageB/pages/f6/f6'>
+<view class="box4">
+    <text>排行榜</text>
+</view>
+</navigator>
+
+<view class="content">
+    <image src='../../images/微信图片_20231003022722.png'></image>
+</view>

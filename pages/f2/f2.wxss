@@ -1,0 +1,81 @@
+/* pages/f2/f2.wxss */
+.b1{
+  padding-left: 40px;
+  position: absolute;
+  top: 50px;
+}
+.b1 text{
+  font-size: 25px;
+}
+.b2{
+  background-color: #DFEEFF;
+  position: absolute;
+  top: 110px;
+  left: 35px;
+  right: 35px;
+  height: 500px;
+}
+
+.b2 text1{
+   font-size: 15px;
+   position:absolute;
+   left: 20px;
+   right: 20px;
+   top: 22px;
+}
+.b2 text2{
+  font-size: 15px;
+  position:absolute;
+  left: 20px;
+  right: 20px;
+  top: 76px;
+}
+.b2 text3{
+  font-size: 15px;
+  position:absolute;
+  left: 20px;
+  right: 20px;
+  top: 130px;
+}
+.b2 text4{
+  font-size: 15px;
+  position:absolute;
+  left: 20px;
+  right: 20px;
+  top: 186px;
+}
+
+.b2 text5{
+  font-size: 15px;
+  position:absolute;
+  left: 20px;
+  right: 20px;
+  top: 258px;
+}
+
+.b2 text6{
+  font-size: 15px;
+  position:absolute;
+  left: 20px;
+  right: 20px;
+  top: 354px;
+}
+
+.content{
+  position: absolute;
+  right: 0;
+}
+.content image{
+  width:170px;
+  height:150px;
+}
+
+.content1{
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+.content1 image{
+  width:170px;
+  height:150px;
+}

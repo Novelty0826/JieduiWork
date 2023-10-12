@@ -1,0 +1,38 @@
+<!--pages/f2/f2.wxml-->
+<view class="b1">
+    <text>游戏规则</text>
+</view>
+
+<view class="b2">
+    <view calss="t1">
+    <text1>进入游戏，选择游戏模式后，设置游戏局数和玩家个人筹码数</text1>
+    </view>
+
+    <view class="t2">
+    <text2>每一局游戏内有三轮投掷机会，玩家一人一轮流投掷骰子，每个玩家有5个骰子</text2>
+    </view>
+
+    <view class="t3">
+    <text3>前两次投掷骰子之后可以选择锁定0~5个骰子锁定的骰子位于选定区域不再改变</text3>
+    </view>
+
+    <view class="t4">
+    <text4>前两轮每轮投掷结束并在所有玩家锁定骰子后，每位玩家可以选择增加倍率：0，1，2，3。选择完成后进入下一轮。</text4>
+    </view>
+
+    <view class="t5">
+    <text5>第三轮投掷结束后，所有玩家的全部骰子自动锁定并进行计分（得分为五个骰子的点数总和+奖励分），得出最终结果，筹码划分。。</text5>
+    </view>
+
+    <view class="t6">
+    <text6>奖励分：双对-10分，三连-10分，葫芦-20分，四连-40分，五连-100分，小顺子-30分，大顺子-60分。</text6>
+    </view>
+</view>
+
+<view class="content">
+    <image src='../../images/微信图片_20231003000336.png'></image>
+</view>
+
+<view class="content1">
+    <image src='../../images/微信图片_20231003000839.png'></image>
+</view>

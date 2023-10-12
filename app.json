@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/f1/f1",
+    "pages/f2/f2"
+  ],
+  "subpackages": [
+    {
+      "root": "pageA",
+      "name": "pageA",
+      "pages": [
+        "pages/f3/f3",
+        "pages/f4/f4",
+        "pages/f3-1/f3-1",
+        "pages/f4-1/f4-1"
+        
+      ]
+    },
+    {
+      "root": "pageB",
+      "name": "pageB",
+      "pages": [
+        "pages/f6/f6"
+      ]
+    },
+    {
+      "root": "pageC",
+      "name": "pageC",
+      "pages": [
+        "pages/f5/f5",
+        "pages/f5-1/f5-1"
+      ]
+    }
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

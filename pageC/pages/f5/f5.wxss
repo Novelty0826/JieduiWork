@@ -1,0 +1,210 @@
+/* pages/f5/f5.wxss */
+.a1{
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.flex-container1{
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  
+  
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.flex-container2{
+  display: flex;
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  
+  flex-direction : column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.dice-box{
+  padding: 8px;
+} 
+
+.second-row{
+  display:flex;
+  flex-direction : row;
+  justify-content: space-around;
+  position: absolute;
+  top:100px;
+}
+
+/* 骰子容器公用样式 */
+.face {
+  display: flex;
+  margin: 5px;
+  padding: 4px;
+  background-color:#ffffff;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius:10%;
+  box-shadow: inset 0 5px white,
+              inset 0 -5px #bbb,
+              inset 5px 0 #8db4c0,
+              inset -5px 0 #d7d7d7;
+}
+
+
+/* 筛子中的点的样式 */
+.pip {
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  margin:4px;
+  background-color: #333;
+  box-shadow: inset 0 3px #111,
+              inset 0 -3px #555;
+}
+
+/* 面公用样式 */
+
+
+/* 第一面布局方式：元素水平居中且垂直居中 */
+.first {
+  justify-content: center;
+  align-items: center;
+}
+
+/* 第二面布局方式 */
+.second {
+  justify-content: space-between;
+}
+/* 右对齐 */
+.second .pip:last-child {
+  align-self: flex-end;
+}
+
+/* 第三面布局方式 */
+.third {
+  justify-content: space-between;
+}
+.third .pip.third-item-center {
+  align-self: center; 
+}
+.third .pip:last-child {
+  align-self: flex-end;
+}
+
+
+/* 第四面布局方式 */
+.fourth {
+  justify-content: space-between; 
+}
+.fourth .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+
+/* 第五面布局方式 */
+.fifth {
+  justify-content: space-between; 
+}
+.fifth .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.fifth .column.fifth-column-center{
+  justify-content: center;
+}
+
+/* 第六面布局方式 */
+.sixth { 
+  justify-content:space-between;
+}
+.sixth .column {
+  display: flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+.button-box1{
+  position: absolute;
+  top: 250px;
+  width:80%;
+}
+
+.button-box2{
+  position: absolute;
+  top:320px;
+  width:80%;
+}
+.my-button {
+  
+  width: 5px;
+  height: 40px;
+  line-height: 35px;
+  text-align: center;
+  background-color: #6ac5aa;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 8px;
+  padding: 5px 10px;
+  padding-bottom: 5px;
+  position: absolute;
+  right:30px;
+  top:50px;
+}
+
+.rate {
+  font-size: 10px;
+  position: absolute;
+  top:30px;
+  right:30px;
+}
+.result1{
+  font-size: 24px;
+  position: absolute;
+  top:210px;
+  color: black;
+  
+}
+
+.result2{
+  font-size: 24px;
+  position: absolute;
+
+  color: black;
+  
+  top:30px;
+}
+
+
+.content image{
+  width:100%;
+  height:320px;
+  position: absolute;
+  bottom:0;
+  opacity: 30%;
+}

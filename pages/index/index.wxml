@@ -1,0 +1,14 @@
+<view class="m1">
+    <view class='title'>摇<text>骰</text>子</view>
+</view>
+<view class="m2">
+    <viev class='play'>
+    <navigator url='../f1/f1'>
+    PLAY
+    </navigator>
+    </viev>
+</view>
+<view class="content">
+    <image src='../../images/微信图片_20231003022722.png'></image>
+</view>
+

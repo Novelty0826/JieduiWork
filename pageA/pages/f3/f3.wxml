@@ -1,0 +1,187 @@
+<!--pages/f3/f3.wxml-->
+<view class="a1">
+<text1>游戏局数：</text1>{{value1}}
+<text2>游戏筹码：</text2>{{value2}}
+</view>
+
+<view class="content">
+    <image src='../../../pageA/images/微信图片_20231003022722.png'></image>
+</view> 
+<!-- 骰子模版视图 -->
+
+<template name="first">
+    <view class="first face">
+        <span class="pip"></span>
+    </view>
+</template>
+
+<template name="second">
+    <view class="second face">
+        <span class="pip"></span>
+        <span class="pip"></span>
+    </view>
+</template>
+
+<template name="third">
+    <view class="third face">
+        <span class="pip"></span>
+        <span class="pip third-item-center"></span>
+        <span class="pip"></span>
+    </view>
+</template>
+
+<template name="fourth">
+    <view class="fourth face">
+        <!--按照列排列两个点-->
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+        <!--按照列排列另外两个点-->
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+    </view>
+</template>
+
+<template name="fifth">
+    <view class="fifth face">
+        <!--按照列排列两个点-->
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+        <!--按照列排列中间一个点-->
+        <view class="column fifth-column-center">
+            <span class="pip"></span> 
+        </view>
+        <!--按照列排列另外两个点--> 
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+    </view>
+</template>
+
+<template name="sixth">
+    <view class="sixth face">
+        <!--按照列排列三个点-->
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view> 
+         <!--按照列排列另外三个点-->
+        <view class="column">
+            <span class="pip"></span>
+            <span class="pip"></span>
+            <span class="pip"></span>
+        </view>
+    </view>
+</template>
+
+<!-- 展示视图 -->
+
+<view class="flex-container1"> 
+<view class="container">
+  <button class="btn" bindtap="addbeilv">增加倍率</button>
+  <view class="rate">当前倍率：{{beilv}}</view>
+</view>
+<view class="result1" style="visibility:{{isShow}}">
+        <text >你的积分是：{{total1}}</text>
+    </view>
+<view class="second-row">
+    <view class="dice-box">
+        <block>
+            <template is="{{dice[num1]}}"></template>
+            <button class="my-button"bindtap="lockDice1"size="mini">锁定</button>
+        </block>
+    </view>
+        <view class="dice-box">
+        <block>
+            <template is="{{dice[num2]}}"></template>
+            <button class="my-button"bindtap="lockDice2" size="mini">锁定</button>
+        </block>
+    </view>
+        <view class="dice-box">
+        <block>
+            <template is="{{dice[num3]}}"></template>
+            <button class="my-button"bindtap="lockDice3"size="mini">锁定</button>
+        </block>
+         </view>
+            <view class="dice-box">
+        <block>
+            <template is="{{dice[num4]}}"></template>
+            <button class="my-button"bindtap="lockDice4"size="mini">锁定</button>
+        </block>
+    </view>
+    <view class="dice-box">
+        <block>
+            <template is="{{dice[num5]}}"></template>
+            <button class="my-button"bindtap="lockDice5"size="mini">锁定</button>
+        </block>
+         </view>
+    </view>
+
+    <view class="button-box1">
+        <button type="{{buttonType}}"  bindtap="shakeClick1" >投掷</button>
+    </view>
+</view>
+
+
+<view class="flex-container2"> 
+    <view class="result2" style="visibility:{{isShow}}">
+        <text>你的积分是：{{total2}}</text>
+    </view>
+<view class="second-row">
+    <view class="dice-box">
+        <block>
+            <template is="{{dice[num6]}}"></template>
+            <button class="my-button"bindtap="lockDice6"size="mini">锁定</button>
+        </block>
+    </view>
+        <view class="dice-box">
+        <block>
+            <template is="{{dice[num7]}}"></template>
+            <button class="my-button"bindtap="lockDice7"size="mini">锁定</button>
+        </block>
+
+    </view>
+    
+    <view class="dice-box">
+        <block>
+            <template is="{{dice[num8]}}"></template>
+            <button class="my-button"bindtap="lockDice8"size="mini">锁定</button>
+        </block>
+         </view>
+            <view class="dice-box">
+        <block>
+            <template is="{{dice[num9]}}"></template>
+            <button class="my-button"bindtap="lockDice9"size="mini">锁定</button>
+        </block>
+    </view>
+    <view class="dice-box">
+        <block>
+            <template is="{{dice[num10]}}"></template>
+            <button class="my-button"bindtap="lockDice10"size="mini">锁定</button>
+        </block>
+         </view>
+    </view>
+
+
+
+    <view class="button-box1">
+        <button type="{{buttonType}}"  bindtap="shakeClick2" >投掷</button>
+    </view>
+    <view class="button-box2">
+        <button bindtap="goToDice">结算</button>
+    </view>
+
+</view>
+
+
+
+
+
+
